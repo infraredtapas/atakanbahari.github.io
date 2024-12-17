@@ -59,11 +59,20 @@
     <section id="hero" class="hero section light-background">
 
       <img src="assets/img/hero-bg.jpg" alt="">
-
+    
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>Atakan Bahari</h2>
+            <!-- SVG added here -->
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 50px; display: inline-block;">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier"> 
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z" fill="#000000"></path> 
+              </g>
+            </svg>
+    
             <p>I'm <span class="typed" data-typed-items="Technical Developer, React Native Expert, AWS Enthusiast">Technical Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -74,8 +83,9 @@
           </div>
         </div>
       </div>
-
-    </section><!-- End Hero Section -->
+    
+    </section>
+    <!-- End Hero Section -->
 
   </section><!-- /About Section -->
   <!-- Removed extra closing tag here -->
@@ -347,6 +357,177 @@
       <h2>Testimonials</h2>
       <!-- Add testimonials content -->
     </section>
+    <section id="math-section" class="section">
+      <div class="container">
+        <h2>Mathematical Object</h2>
+        <p>Below is the formula for standard deviation:</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <!-- mrow groups elements horizontally -->
+          <mrow>
+            <!-- mi is for identifiers like variables -->
+            <mi>σ</mi>
+            <!-- mo is for operators -->
+            <mo>=</mo>
+            <msqrt>
+              <mrow>
+                <mfrac>
+                  <mrow>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow>
+                    <mi>N</mi>
+                  </mrow>
+                </mfrac>
+                <munderover>
+                  <!-- mo is for operators -->
+                  <mo>&#x2211;</mo>
+                  <!-- mrow groups elements horizontally -->
+                  <mrow>
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mi>N</mi>
+                </munderover>
+                <mrow>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <msub>
+                        <mi>x</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>-</mo>
+                      <mi>μ</mi>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+              </mrow>
+            </msqrt>
+          </mrow>
+        </math>
+      </div>
+    </section>
+
+    <section id="contact-form" style="padding: 40px 20px; background-color: #f9f9f9;">
+      <div class="container" style="max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Website Visitor Contact Form</h2>
+        
+        <!-- Form Starts Here -->
+        <form id="visitor-form">
+          <!-- Basic Information -->
+          <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+            <div style="flex: 1;">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+            <div style="flex: 1;">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+          </div>
+    
+          <div style="margin-top: 15px;">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+          </div>
+    
+          <div style="margin-top: 15px;">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+          </div>
+    
+          <div style="margin-top: 15px;">
+            <label for="address">Address:</label>
+            <input type="text" id="address" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+          </div>
+    
+          <!-- Questions with Ratings -->
+          <h3 style="margin-top: 20px; color: #555;">Website Feedback (Rate 1-10)</h3>
+          <div style="margin-top: 10px;">
+            <label>How visually appealing do you find our website?</label>
+            <input type="number" id="q1" min="1" max="10" required style="width: 100%; padding: 8px; margin-top: 5px;">
+          </div>
+    
+          <div style="margin-top: 10px;">
+            <label>How easy was it to navigate the website?</label>
+            <input type="number" id="q2" min="1" max="10" required style="width: 100%; padding: 8px; margin-top: 5px;">
+          </div>
+    
+          <div style="margin-top: 10px;">
+            <label>How informative was the website content?</label>
+            <input type="number" id="q3" min="1" max="10" required style="width: 100%; padding: 8px; margin-top: 5px;">
+          </div>
+    
+          <div style="margin-top: 10px;">
+            <label>How likely are you to recommend this website?</label>
+            <input type="number" id="q4" min="1" max="10" required style="width: 100%; padding: 8px; margin-top: 5px;">
+          </div>
+    
+          <div style="margin-top: 10px;">
+            <label>How satisfied are you with the website's performance?</label>
+            <input type="number" id="q5" min="1" max="10" required style="width: 100%; padding: 8px; margin-top: 5px;">
+          </div>
+    
+          <!-- Submit Button -->
+          <button type="button" onclick="saveData()" style="margin-top: 20px; background-color: #5c67f2; color: #fff; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">
+            Submit
+          </button>
+        </form>
+    
+        <!-- Results Display -->
+        <div id="results" style="margin-top: 30px; display: none;">
+          <h3>Form Results</h3>
+          <pre id="resultContent" style="background-color: #f1f1f1; padding: 15px; border-radius: 4px; overflow-x: auto;"></pre>
+          <div id="average" style="font-weight: bold; margin-top: 10px; color: #444;"></div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      function saveData() {
+        // Collect form inputs
+        const formData = {
+          firstName: document.getElementById("firstName").value,
+          lastName: document.getElementById("lastName").value,
+          email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          address: document.getElementById("address").value,
+          q1: parseInt(document.getElementById("q1").value),
+          q2: parseInt(document.getElementById("q2").value),
+          q3: parseInt(document.getElementById("q3").value),
+          q4: parseInt(document.getElementById("q4").value),
+          q5: parseInt(document.getElementById("q5").value),
+        };
+    
+        // Calculate average of numeric responses
+        const average = (
+          (formData.q1 + formData.q2 + formData.q3 + formData.q4 + formData.q5) / 5
+        ).toFixed(2);
+    
+        // Display results
+        const resultContent = `
+        First Name: ${formData.firstName}
+        Last Name: ${formData.lastName}
+        Email: ${formData.email}
+        Phone: ${formData.phone}
+        Address: ${formData.address}
+        Q1: ${formData.q1} (Visual Appeal)
+        Q2: ${formData.q2} (Navigation)
+        Q3: ${formData.q3} (Content Quality)
+        Q4: ${formData.q4} (Recommendation)
+        Q5: ${formData.q5} (Performance)
+        `;
+        document.getElementById("resultContent").textContent = resultContent;
+        document.getElementById("average").textContent = 
+          `${formData.firstName} ${formData.lastName} (${formData.email}): Average Rating = ${average}`;
+    
+        document.getElementById("results").style.display = "block";
+        console.log("Visitor Data:", formData);
+      }
+    </script>
     
     
 
